@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>student</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Name</ion-card-subtitle>
+      <ion-card-title>{{ student && student.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      The {{ student && student.name }}'s average is {{ student && student.average }}
+      <br>
+      Altenant : {{ (student && student.alternant) ? 'Oui' : 'Non' }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
